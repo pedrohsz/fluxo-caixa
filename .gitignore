@@ -1,0 +1,27 @@
+## Build output
+bin/
+obj/
+
+## Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.suo
+
+## NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+artifacts/
+
+## Relatórios de teste de carga (gerados em runtime, não versionados)
+reports/
+
+## Secrets / ambiente — apenas arquivos de produção/local com segredos reais
+appsettings.Production.json
+appsettings.secrets.json
+
+## OS
+.DS_Store
+Thumbs.db
