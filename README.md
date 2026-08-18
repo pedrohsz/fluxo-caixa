@@ -312,7 +312,7 @@ dotnet run --project src/Lancamentos/Lancamentos.Api
 dotnet run --project src/Consolidado/Consolidado.Api
 ```
 
-As migrações são aplicadas automaticamente na inicialização (5 tentativas com backoff exponencial).
+As migrações são aplicadas automaticamente na inicialização, com até 6 tentativas e backoff linear (3s, 6s, 9s, 12s, 15s) para absorver race conditions pós-healthcheck.
 
 ### Scalar UI (documentação interativa)
 
